@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: Default Material Palette
   m_EditorClassIdentifier: 
   array:
-  - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 2100000, guid: cd29f6de299a417499ff0c3066c33b1b, type: 2}
+  - {fileID: 2100000, guid: 0e87c1bdf811f054db6c97ef664fbe58, type: 2}
+  - {fileID: 2100000, guid: b85e6a612dd44d84397defc5a6011c41, type: 2}
+  - {fileID: 2100000, guid: 206edb257da97fe4a8f46d825ccb16d2, type: 2}
+  - {fileID: 2100000, guid: efc320fd38068c142bc50583cfe0b88c, type: 2}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}

@@ -3,6 +3,7 @@ namespace Core
     public enum GameState
     {
         PreGame,
-        Gameplay
+        Gameplay,
+        Postgame
     }
 }
