@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748171, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1266,9 +1266,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   charController: {fileID: 1671379774}
+  star1: {fileID: 5931856879424955933, guid: 1a48b248defb7924d852cc67462fcb45, type: 3}
+  star2: {fileID: 6619997254888916152, guid: 3cf28f307aaba91448a21a478ffd4d1e, type: 3}
   gameState: 0
   start: {fileID: 327879082}
   again: {fileID: 2037968986}
+  maxStars: 5
 --- !u!4 &1373942006
 Transform:
   m_ObjectHideFlags: 0
@@ -4478,7 +4481,7 @@ Transform:
   m_GameObject: {fileID: 1671379774}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -16.09, y: -0.27, z: -12.548122}
+  m_LocalPosition: {x: -16.09, y: -0.27, z: -12}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4529,7 +4532,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 8
   m_CollisionDetection: 0
 --- !u!43 &1682347304
 Mesh:
