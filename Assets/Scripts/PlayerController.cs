@@ -144,6 +144,11 @@ public class PlayerController : MonoBehaviour
         
     }
 
+    public GameState GetGameState()
+    {
+        return gameState;
+    }
+
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "Floor")

@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using Core;
+using Unity.VisualScripting;
 
 public class GameManager : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class GameManager : MonoBehaviour
     public GameObject star1;
     public GameObject star2;
     public GameState gameState;
+    public GameObject platform;
     public Button start;
     public Button again;
 
@@ -29,10 +31,10 @@ public class GameManager : MonoBehaviour
             // Spawn stars
             if (val == 1)
             {
-                Instantiate(star1, new Vector3(Random.Range(-10, -1), Random.Range(-2, 6), -13), Quaternion.Euler(0,90,90));
+                Instantiate(star1, new Vector3(Random.Range(-10, 0), Random.Range(-2, 0), -13), Quaternion.Euler(0,90,90));
             } else
             {
-                Instantiate(star2, new Vector3(Random.Range(-10, -1), Random.Range(-2, 6), -13), Quaternion.Euler(0, 90, 90));
+                Instantiate(star2, new Vector3(Random.Range(-10, 0), Random.Range(-2, 0), -13), Quaternion.Euler(0, 90, 90));
             }
         }
     }
@@ -40,13 +42,28 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame  
     void Update()
     {
-        
+        if (charController.GetComponent<PlayerController>().GetGameState() != GameState.PreGame)
+        {
+            StartCoroutine(MovePlatformCoroutine());
+        }
     }
 
     public void StartGame()
     {
         charController.GetComponent<PlayerController>().StartGame();
         start.gameObject.SetActive(false);
+    }
+
+    private IEnumerator MovePlatformCoroutine()
+    {
+        float posx = platform.transform.position.x;
+        posx -= 0.05f;
+        yield return new WaitForSeconds(0.01f);
+        if (posx <= -48)
+        {
+            posx = 35;
+        }
+        platform.transform.position = new Vector3(posx, platform.transform.position.y, platform.transform.position.z);
     }
 
 }
