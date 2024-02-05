@@ -26,7 +26,7 @@ public class GameManager : MonoBehaviour
         for (int i = 0; i < maxStars; i++)
         {
             int val = Random.Range(0, 2);
-            Debug.Log(val);
+            // Spawn stars
             if (val == 1)
             {
                 Instantiate(star1, new Vector3(Random.Range(-10, -1), Random.Range(-2, 6), -13), Quaternion.Euler(0,90,90));

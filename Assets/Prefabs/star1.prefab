@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4289396467791059846}
   - component: {fileID: 2490420918783167376}
   - component: {fileID: 8157610446909644464}
+  - component: {fileID: -4881808736522026730}
   m_Layer: 0
   m_Name: star1
   m_TagString: Stars
@@ -30,8 +31,8 @@ Transform:
   m_GameObject: {fileID: 5931856879424955933}
   serializedVersion: 2
   m_LocalRotation: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: -4.994875, y: 6.89, z: -12}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
+  m_LocalPosition: {x: -4.994875, y: 6.89, z: -12.5}
+  m_LocalScale: {x: 0.3, y: 1, z: 0.3}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -581,7 +582,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 1129
+  m_VersionIndex: 1137
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -688,3 +689,15 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!114 &-4881808736522026730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5931856879424955933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f4c651148ff4494185c698ff2e7fe28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

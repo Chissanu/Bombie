@@ -18,12 +18,10 @@ public class Bomb : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        Debug.Log(collision.gameObject.tag);
         if (collision.gameObject.tag == "Floor") 
         {
             this.gameObject.GetComponent<Renderer>().enabled = false;
-        } else if (collision.gameObject.tag == "Player")
-        {
-            this.gameObject.GetComponent<Collider>().enabled = false;
         }
     }
 }

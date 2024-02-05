@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7926605318971663205}
   - component: {fileID: 8947250048206488747}
   - component: {fileID: 5671396949311997890}
+  - component: {fileID: -190357778755466155}
   m_Layer: 0
   m_Name: star2
   m_TagString: Stars
@@ -30,8 +31,8 @@ Transform:
   m_GameObject: {fileID: 6619997254888916152}
   serializedVersion: 2
   m_LocalRotation: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: -4.17, y: 1.15, z: -12}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalPosition: {x: -4.17, y: 1.15, z: -12.5}
+  m_LocalScale: {x: 0.5, y: 1, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -688,3 +689,15 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!114 &-190357778755466155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6619997254888916152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f4c651148ff4494185c698ff2e7fe28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

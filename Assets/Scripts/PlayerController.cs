@@ -118,7 +118,7 @@ public class PlayerController : MonoBehaviour
         }
         Vector3 currentPos = this.transform.position;
         currentPos.x += 0.1f;
-        currentPos.y -= 0.2f;
+        currentPos.y -= 0.8f;
 
         bombList[currentBomb].transform.position = this.transform.position;
         bombList[currentBomb].GetComponent<Renderer>().enabled = true;
